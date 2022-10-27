@@ -28,13 +28,13 @@ function App() {
 
   const [filtro, setFiltro] = useState<Date | null>();
 
-  const adicionarEvento = (evento: IEvento) => {
-    evento.id = Math.round((new Date()).getTime() / 1000)
+  // const adicionarEvento = (evento: IEvento) => {
+  //   evento.id = Math.round((new Date()).getTime() / 1000)
     // eventos.push(evento)
     // console.log(eventos);
 
     // setEventos([...eventos])
-  };
+  // };
 
   const alterarStatusEvento = (id: number) => {
     // const evento = eventos.find(evento => evento.id === id)
@@ -62,7 +62,7 @@ function App() {
       <div className={style.App}>
         <div className={style.Coluna}>
           <Card>
-            <Formulario aoSalvar={adicionarEvento} />
+            <Formulario />
           </Card>
           <hr />
           <Card>
