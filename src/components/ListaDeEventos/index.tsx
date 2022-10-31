@@ -1,6 +1,4 @@
 import React from 'react';
-import { useRecoilValue } from 'recoil';
-import { listaDeEventosState } from '../../state/atom';
 import useListaDeEventos from '../../state/hooks/useListaDeEventos';
 import Evento from '../Evento';
 import Filtro from '../Filtro';
